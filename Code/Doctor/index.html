@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<link rel="stylesheet" type="text/css" href="dstyle.css">
+	<script type=text/javascript>
+var images = ["Images/Image2.png",
+ "Images/box1.png", 
+ "Images/Image3.png"];
+
+var imgNum = 0;
+var imgLength = images.length - 1;
+
+
+function changeImage(direction) {
+    imgNum = imgNum + direction;
+    if (imgNum > imgLength) {
+        imgNum = 0;
+    }
+    if ( imgNum < 0) {
+        imgNum = imgLength;
+    }
+    document.getElementById('slideshow').src = images[imgNum];
+    return false; // prevent default link
+}
+window.setInterval(function() {
+    changeImage(1);
+}, 3000);
+
+
+
+</script>
+<style>
+img { align: width: 250px; height: 300; }
+.preload { display:none }
+#slider{
+     position: relative;
+	width: 90%;
+	top: 7%;
+	left: 5%;
+	height: 40%;
+	margin-bottom:5%;
+}
+#a1 {
+
+    margin-left:13%;
+	text-decoration:none;
+}
+
+#a2 {
+    
+    margin-left:70%;
+	text-decoration:none;
+}
+
+</style>
+
+	<title>Doctors</title>
+</head>
+<body>
+	<div class="tabs">
+		<div class="Logo"><a href="../"><img src="Images/MediClick Logo text.png"></a></div>
+		<div><a href=""><img src="Images/Upload tab.png" ></a></div>
+		<div><a href="../cart"><img src="Images/Medicines Info tab.png"></a></div>
+		<div><a href="../Doctor/"><img src="Images/Call Doctor Tab.png"></a></div>
+		<div><a href="../cart/"><img src="Images/Buy tab.png"></a></div>
+		<div><a href="../Health-Tips/"><img src="Images/Register tab.png"></a></div>
+		<div><a href=""><img src="Images/Call Us tab.png"></a></div>
+	</div>
+	<!-- <div class="box1">
+		<img src="Images/box1.png">
+	</div>
+	-->
+	<div id="slider">
+<img src="Images/Image2.png" id="slideshow"><br/>
+</div>
+<div id="dec">
+<a id="a1" href="#" onclick="return changeImage(-1);">Previous</a>
+<a id="a2" href="#" onclick="return changeImage(1);">Next</a>
+</div>
+<div class="preload">
+   <img src="Images/box1.png" />
+   <img src="Images/Image3.png" />
+</div>
+
+	<div class="box2">
+		<div class="categories">
+			<a target="_blank" href="http://www.drrajneeshjain.com/" ><img src="Images/Cardiologists.png"></a>
+		</div>
+		<div class="categories">
+			<img src="Images/Gynaecologists.png">
+		</div>
+		<div class="categories">
+			<img src="Images/Physicians.png">
+		</div>
+		<div class="categories">
+			<img src="Images/Oncologists.png">
+		</div>
+	</div>
+
+	
+</body>
+</html>

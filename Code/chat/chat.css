@@ -1,0 +1,32 @@
+body 
+{ 
+ font-family: Tahoma, Helvetica, sans-serif; 
+ margin: 1px; 
+ font-size: 12px; 
+ text-align: left 
+} 
+#content 
+{ 
+ border: DarkGreen 1px solid; 
+ margin-bottom: 10px 
+} 
+input 
+{ 
+ border: #999 1px solid; 
+ font-size: 10px 
+} 
+#scroll 
+{ 
+ position: relative; 
+ width: 340px; 
+ height: 270px; 
+ overflow: auto 
+} 
+.item 
+{ 
+ margin-bottom: 6px 
+} 
+#colorpicker 
+{ 
+ text-align:center 
+} 

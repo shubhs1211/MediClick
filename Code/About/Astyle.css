@@ -1,0 +1,93 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/*outline: 1px solid red !important;*/
+}
+/*body {
+	
+    
+	height: 1000px;
+
+	background: -webkit-linear-gradient(90deg, #FFFFFF 24%, #0E69A0 83%);
+}*/
+body {
+	
+	background-color: #F8F8F8;
+}
+.tabs, .sectwo {
+		display: flex;
+
+}
+.tabs img {
+	width: 	99%;
+}
+.Logo {
+	margin-top: 12px;
+	margin-right: 10px;
+	margin-left: 3px;
+	height: 37px;
+}
+
+h1 {
+	/*position: relative;*/
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 70px;
+	color: #097B7D;
+
+	text-align: center;	
+
+}
+
+p {
+	position: relative;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 27px;
+	color: #097B7D;
+	margin-bottom: 0px;
+	text-align: center;
+	width: 70%;
+	left: 13%;
+	background-color: white;
+}
+.secone {
+	background-color: white;
+	
+}
+.sectwo {
+	position: relative;
+	background-color: white;
+}
+.sectwo div {
+	position: relative;
+	width: 40%;
+	left: 10%;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 27px;
+	color: #097B7D;
+}
+h2 {
+	font-weight: normal;
+	font-family: Helvetica;
+	color: #097B7D;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright img {
+	width: 100%;
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type=text/javascript>
+var images = ["Images/Doctors.png",
+ "Images/box1.png", 
+ "Images/Buy tab.png"];
+
+var imgNum = 0;
+var imgLength = images.length - 1;
+
+
+function changeImage(direction) {
+    imgNum = imgNum + direction;
+    if (imgNum > imgLength) {
+        imgNum = 0;
+    }
+    if ( imgNum < 0) {
+        imgNum = imgLength;
+    }
+    document.getElementById('slideshow').src = images[imgNum];
+    return false; // prevent default link
+}
+window.setInterval(function() {
+    changeImage(1);
+}, 3000);
+
+
+
+</script>
+<style>
+img { align: width: 250px; height: 300; }
+.preload { display:none }
+#slideshow{
+     margin-left:30%;
+}
+</style>
+
+</head>
+
+
+
+<body>
+<div id="img">
+<img src="Images/Doctors.png" id="slideshow"><br/>
+</div>
+<a href="#" onclick="return changeImage(-1);">Previous</a><br/>
+<a href="#" onclick="return changeImage(1);">Next</a>
+
+<div class="preload">
+   <img src="Images/box1.png" />
+   <img src="Images/Buy tab.png" />
+</div>
+
+
+
+</body>
